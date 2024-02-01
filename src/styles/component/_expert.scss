@@ -1,0 +1,71 @@
+// ================ Expert Chef =====================
+
+.expert {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+
+    &__detail {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+
+        p{
+            margin-bottom: 1em;
+            max-width: 300px;
+        }
+
+        .chef__qualities {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1em;
+
+                .quality {
+                    display: flex;
+                    column-gap: 0.5em;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            display: flex;
+            column-gap: 1em;
+        }
+    }
+
+    // Image
+
+    &__img {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .img__container {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 80%;
+
+            }
+        }
+    }
+
+
+    
+}

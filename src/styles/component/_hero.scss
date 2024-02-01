@@ -1,0 +1,121 @@
+// =================== HERO SECTION ===================
+
+.hero {
+    
+    display: grid;
+    
+    &__left {
+
+        margin: auto 3em;
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5em;
+            margin: 0 auto 2em;
+
+
+            h1{
+                font-size: var(--biggest-font-size);
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            p {
+                max-width: 80%;
+                margin-bottom: 0.875em;
+                color: #5C6574;
+                font-family: "Inter";
+                font-size: var(--h3-font-size);
+                font-style: normal;
+                font-weight: 400;
+            }
+
+        }
+        
+        
+
+        
+    }
+
+    &__btn {
+        display: flex;
+        column-gap: 1em;
+    }
+
+    &__socials {
+        display: flex;
+        column-gap: 2em;
+
+        &__item {
+            width: 36px;
+            height: 36px;
+            border: 1px solid black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            i {
+                font-size: var(--h3-font-size);
+            }
+        }
+    }
+
+    &__right {
+
+        border-radius: 20px 10px 20px 10px;
+
+
+        &__img{
+            width: 70%;
+            position: relative;
+            margin: 2em auto;
+            
+            .main-image {
+                width: 100%;
+            }
+
+            .vector_1,
+            .vector_2,
+            .vector_3 {
+                width: 40%;
+                position: absolute;
+                color: rgb(154, 162, 170);
+            }
+
+            .vector_1,
+            .vector_2,
+            .vector_3{
+                opacity: 0.5;
+                z-index: -1;
+            }
+
+            .vector_1 {
+                top: -100px;
+                left: -20%;
+            }
+
+            .vector_2 {
+                top: -150px;
+                right: -15%;
+            }
+
+            .vector_3 {
+                bottom: -100px;
+                right: -20%;
+            }
+
+            .side_dish {
+                position: absolute;
+                width: 50%;
+                bottom: 0;
+                left: -50px;
+            }
+        }
+        
+        
+        
+    }
+}

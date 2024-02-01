@@ -1,0 +1,83 @@
+// ======================================== BASE ================================
+* ,::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0 ;
+    font-family: var(--primary-font);
+    padding: 0 auto;
+}
+
+h1,h2,h3,h4 {
+    font-weight: var(--font-bold);
+    color: var(--dark-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: var(--biggest-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h4 {
+    font-size: var(--normal-font-size);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+// ==============================REUSEABLE CONTENT ====================================
+
+.flex
+{
+    display: flex;
+
+    &__responsive{
+        flex-direction: column;
+    }
+
+    &-column{
+        flex-direction: column;
+    }
+
+    &-row {
+        flex-direction: row;
+
+        &-center {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    }
+    
+}
+
+.btn-primary{
+    background: var(--first-color);
+}
+
+.btn-secondary{
+    background: var(--dark-color);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5em;
+}

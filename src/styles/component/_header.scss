@@ -1,0 +1,68 @@
+// ===================================HEADER===============================
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: .5s auto;
+    margin: 1em auto;
+
+    .brand__logo {
+
+        img{
+            width: 100px;
+        }
+    }
+}
+
+
+// ========================= NAV ======================
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu{
+        @media screen and (max-width: 767px) {
+            position: fixed;
+            background: #ccc;
+            padding: 2.5rem 0;
+            width: 90%;
+            top: -100%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 2rem;
+            z-index: var(--z-fixed);
+            transition: .4s;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5em;
+    }
+
+    &__link{
+        color: var(--dark-color);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &__toggle{
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+
+// ============================== SHOW MENU ==================================
+.show-menu {
+    top: calc(var(--header-height) + 1rem);
+}
+
+

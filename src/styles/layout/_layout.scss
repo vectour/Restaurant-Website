@@ -1,0 +1,37 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section{
+    padding: 3em 0;
+    
+    &__title, &__title-center{
+        font-size: var(--h2-font-size);
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: var(--mb-1);
+    }
+}
+
+
+.svg{
+    &__color{
+        fill: var(--first-color);
+    }
+    &__blob{
+        fill: var(--first-color-light);
+    }
+    &__img{
+        width: 300px;
+        justify-self: center;
+    }
+}
+
+/*=============== LAYOUT ===============*/
+.container{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}

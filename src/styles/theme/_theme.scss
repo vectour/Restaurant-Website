@@ -1,0 +1,21 @@
+// =========== Variables Dark Theme =================
+body.dark-theme {
+    --first-color-light: hsl(var(--hue), var(--sat), 85%);;
+    --title-color: hsl(var(--hue), 4%, 15%);
+    --text-color: hsl(var(--hue), 4%, 35%);
+    --text-color-light: hsl(var(--hue), 4%, 65%);
+    --body-color: hsl(var(--hue), 0%, 100%);
+    --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+    --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+}
+
+// =============== Button Dark/Light ===================
+
+.change-theme {
+    right: 1.5em;
+    top: 1.1em;
+    color: var(--dark-color);
+    font-size: 1.8em;
+    cursor: pointer;
+}
