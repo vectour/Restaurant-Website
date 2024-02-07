@@ -6,10 +6,16 @@
     flex-direction: column;
     row-gap: 2em;
 
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        
+    }
+
     &__detail {
         display: flex;
         flex-direction: column;
         row-gap: 1em;
+        margin: 0 auto;
 
         p{
             margin-bottom: 1em;
@@ -25,6 +31,12 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 1em;
+
+                @media screen and (min-width: 1200px) {
+                    flex-direction: row;
+                    column-gap: 1em;
+                    
+                }
 
                 .quality {
                     display: flex;
