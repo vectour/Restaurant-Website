@@ -149,7 +149,12 @@
                     flex-direction: column;
                     row-gap: 1.5em;
                     font-size: 13px;
-                    font-weight: 400;
+
+                    li {
+                        a {
+                            font-weight: 400;
+                        }
+                    }
 
                 }
             }
