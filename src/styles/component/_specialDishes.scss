@@ -106,24 +106,32 @@
 
         display: flex;
         flex-direction: column;
+        max-height: 667px;
+        padding: 0 auto;
 
         @media screen and (min-width: 768px) {
             flex-direction: row-reverse;
-            justify-content: space-between;
+
             
         }
 
         &__detail {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             row-gap: 1em;
             margin: 0 auto;
+            
 
             // @media screen and (min-width: 768px) {
                 
             //     flex-direction: row-reverse;
                 
             // }
+
+            h2{
+                font-size: var(--h3-font-size);
+            }
 
             p {
                 width: 300px;
@@ -137,6 +145,10 @@
         }
 
         &__img {
+            width: 55%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
 
             .img{
                 min-width: 300px;
