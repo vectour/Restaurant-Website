@@ -18,6 +18,12 @@ export class LandingPageComponent {
 
   @HostListener('window: scroll', ['$event'])
   onScroll(event: any) {
-    this.isScrolled = true
+    // Calculate the height scrolled
+    const scrollPosition = window.screenY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    // Height to show blur header
+    const scrollHeight = 50
+
+    this.isScrolled = scrollPosition >scrollHeight
+    // this.isScrolled = true
   }
 }
