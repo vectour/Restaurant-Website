@@ -7,7 +7,8 @@
     left: 0;
     z-index: var(--z-fixed);
     transition: .5s auto;
-    margin: 1em auto;
+    margin: auto;
+    background: transparent;
 
     .brand__logo {
 
@@ -31,12 +32,12 @@
             position: fixed;
             background: #ccc;
             padding: 2.5rem 0;
-            width: 90%;
+            width: 100%;
             top: -100%;
             left: 0;
             right: 0;
             margin: 0 auto;
-            border-radius: 2rem;
+            // border-radius: 2rem;
             z-index: var(--z-fixed);
             transition: .4s;
         }
@@ -62,7 +63,23 @@
 
 // ============================== SHOW MENU ==================================
 .show-menu {
-    top: calc(var(--header-height) + 1rem);
+    top: calc(var(--header-height));
+}
+
+
+/* =================== Blur Header =================*/
+
+.blur_header::after {
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: hsla(0, 0%, 6%, 0.25 );
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);  /* For Safari */
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 

@@ -1,4 +1,4 @@
-<header class="header flex-between" id="header">
+<header class="header flex-between" id="header" [class.blur_header] = "isScrolled">
     <nav class="nav container">
         <div class="brand__logo">
             <img src="/assets/img/brand-logo.png" class="brand__logo">
@@ -243,15 +243,15 @@
                 <h3>OPENING HOURS</h3>
                 <div class="category__container">
                     <div class="category">
-                        <p>Monday to Friday</p>
+                        <h4>Monday to Friday</h4>
                         <p>8:00 am to 9:00 am</p>
                     </div>
                     <div class="category">
-                        <p>Saturday</p>
+                        <h4>Saturday</h4>
                         <p>8:00 am to 9:00 pm</p>
                     </div>
                     <div class="category">
-                        <p>Sunday</p>
+                        <h4>Sunday</h4>
                         <p>CLOSED</p>
                     </div>
 

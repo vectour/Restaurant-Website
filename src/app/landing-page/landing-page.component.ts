@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -12,5 +12,12 @@ export class LandingPageComponent {
   toggleMenu() {
     this.toggle =!this.toggle
     console.log(this.toggle)
+  }
+
+  isScrolled: boolean = false;
+
+  @HostListener('window: scroll', ['$event'])
+  onScroll(event: any) {
+    this.isScrolled = true
   }
 }
